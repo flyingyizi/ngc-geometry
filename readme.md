@@ -7,13 +7,14 @@
 
 已知各个轴向的最大加速度,以及定义方向的单位向量，标记为：
 
-I:$\overrightarrow{acc_{max}}  = (accx_{max},accy_{max},accz_{max})$
-
-II:$\overrightarrow{unit}  = (x_u,y_u, z_u)$
+$$
+\overrightarrow{acc_{max}}  = (accx_{max},accy_{max},accz_{max})$\\
+\overrightarrow{unit}  = (x_u,y_u, z_u)$
+$$
 
 在该条件下求解在定义的方向上最大允许加速度会是多少。
 
-根据向量的DOT运算可以求解一个向量在另外一个向量上的投影，假设最终求解到的加速度为$\overrightarrow{ACC}$: 
+根据向量的DOT运算可以求解一个向量在另外一个向量上的投影，假设最终求解到的加速度为: 
 
 $$
 \overrightarrow{ACC} = (acc_x,acc_y,acc_z) = A(x_u,y_u, z_u) \\
@@ -41,7 +42,7 @@ $$
 \end{cases}
 $$
 
-从求解$A$的角度，根据上面的分析我们可以采用下面的计算来得到$A$
+从求解$A$的角度，根据上面的分析我们可以采用下面的计算来得到 $A$
 
 $$
 A = min(\cfrac{accx_{max}}{x_u}, \cfrac{accy_{max}}{y_u}, \cfrac{accz_{max}}{z_u})
