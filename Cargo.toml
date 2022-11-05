@@ -1,0 +1,19 @@
+[package]
+name = "ngc-geometry"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+num-traits = {version = "0.2.15",default-features = false,features = ["libm"] }
+
+
+# see https://doc.rust-lang.org/cargo/reference/specifying-dependencies.html
+# Dev-dependencies are not used when compiling a package for building, but are used for compiling tests, examples, and benchmarks.
+[dev-dependencies]
+tagger = "4.3"
+poloto = "11.1.6"
+#poloto = "15.2.0"
+rand = "*"
+lazy_static = "1.4.0"
