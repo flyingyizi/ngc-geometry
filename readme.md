@@ -8,8 +8,8 @@
 已知各个轴向的最大加速度,以及定义方向的单位向量，标记为：
 
 $$
-\overrightarrow{acc_{max}}  = (accx_{max},accy_{max},accz_{max})$\\
-\overrightarrow{unit}  = (x_u,y_u, z_u)$
+\overrightarrow{acc_{max}}  = (accx_{max},accy_{max},accz_{max})\\
+\overrightarrow{unit}  = (x_u,y_u, z_u)
 $$
 
 在该条件下求解在定义的方向上最大允许加速度会是多少。
