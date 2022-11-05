@@ -5,14 +5,17 @@
 
 mod arc;
 mod line;
+mod lookahead;
 mod pid;
 pub mod profile;
 mod traits;
 mod vecx;
+extern crate alloc;
 
 pub use arc::Arc;
 pub use line::{Line2D, Line3D};
-pub use vecx::{Point, Point3, Vec2, Vec3, Vec5,CanonPlane};
+pub use lookahead::{Direction, PlanBlock, PlanCondition, PlanLineData, Planer};
+pub use vecx::{CanonPlane, Point, Point3, Vec2, Vec3, Vec5};
 
 use num_traits::Float;
 
