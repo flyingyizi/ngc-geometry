@@ -12,7 +12,7 @@ mod vecx;
 
 pub use arc::Arc;
 pub use line::{Line2D, Line3D};
-pub use vecx::{Point, Point3, Vec2, Vec3, Vec5};
+pub use vecx::{Point, Point3, Vec2, Vec3, Vec5,CanonPlane};
 
 use num_traits::Float;
 
