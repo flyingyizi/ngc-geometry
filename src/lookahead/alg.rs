@@ -148,7 +148,7 @@ pub struct Planer {
     ///  streaming operating conditions.
     block_buffer_planned: Option<usize>,
 
-    cfg: CNCCfgs,
+    pub cfg: CNCCfgs,
 }
 
 impl Planer {

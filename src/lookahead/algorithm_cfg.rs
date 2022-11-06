@@ -2,7 +2,7 @@ use crate::{CanonPlane, Vec3};
 #[allow(unused_imports)]
 use num_traits::Float;
 
-/// Struct which represents the algorithm paramenters. normally, you should provide it based on your cnc machine.
+/// Struct which represents the cnc motion algorithm paramenters. normally, you should provide it based on your cnc machine.
 /// suggest create yourself based on the its default.
 ///
 /// example
@@ -15,6 +15,15 @@ use num_traits::Float;
 /// ```
 #[derive(Clone, Debug)]
 pub struct CNCCfgs {
+    /// mm note: must be a positive value.
+    pub x_max_travel: f32,
+    /// mm note: must be a positive value.
+    pub y_max_travel: f32, // mm note: must be a positive value.
+    /// mm note: must be a positive value.
+    pub z_max_travel: f32, // mm note: must be a positive value.
+    pub a_max_travel: f32, // °
+    pub b_max_travel: f32, // °
+
     /// in plane_XY coordiate, define steps per mm
     pub x_steps_per_mm: f32,
     pub y_steps_per_mm: f32,
@@ -59,6 +68,12 @@ pub struct CNCCfgs {
 impl core::default::Default for CNCCfgs {
     fn default() -> Self {
         Self {
+            x_max_travel: 400.0, // mm note: must be a positive value.
+            y_max_travel: 300.0, // mm note: must be a positive value.
+            z_max_travel: 500.0, // mm note: must be a positive value.
+            a_max_travel: 360.0, // °
+            b_max_travel: 360.0, // °
+
             x_steps_per_mm: 10.,
             y_steps_per_mm: 10.,
             z_steps_per_mm: 10.,
