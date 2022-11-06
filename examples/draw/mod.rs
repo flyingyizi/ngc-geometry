@@ -1,7 +1,5 @@
 use std::path::Path;
 
-use poloto::simple_theme::SimpleTheme;
-
 pub fn svg_file(filename: &str) -> tagger::Adaptor<std::fs::File> {
     let base = Path::new("./target/assets/");
     if base.is_dir() == false {

@@ -1,4 +1,5 @@
-use ngc_geometry::{Arc, Line3D, Point3, Vec2, Vec3};
+use ngc_geometry::Vec2;
+#[allow(unused_imports)]
 use num_traits::Float;
 
 /// after compensaton, the orig end pos will be to the new-end pos
@@ -74,7 +75,7 @@ fn main() {
         .preserve_aspect()
         .build();
 
-    let mut plotter = poloto::quick_fmt_opt!(
+    let plotter = poloto::quick_fmt_opt!(
         canvas,
         "title",
         "x",

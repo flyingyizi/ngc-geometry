@@ -1,5 +1,6 @@
 //! [形象解释PID算法](https://www.cnblogs.com/shangdawei/p/4825259.html)
 
+#[allow(unused_imports)]
 use num_traits::Float;
 
 ///
@@ -25,7 +26,7 @@ pub struct PID {
 
 impl PID {
     pub fn new(set: f32, kp: f32, ki: f32, kd: f32) -> Self {
-        let mut s = Self {
+        let s = Self {
             setpoint: set,
 
             lasto: None,
@@ -42,11 +43,11 @@ impl PID {
         s
     }
 
-    pub fn PIDSetSetpoint(&mut self, set: f32) {
+    pub fn set_point(&mut self, set: f32) {
         self.setpoint = set;
     }
     /// Current Process Value
-    pub fn PIDCompute(&mut self, input: f32) -> f32 /*output*/ {
+    pub fn compute(&mut self, input: f32) -> f32 /*output*/ {
         let delta = self.pidctrl_increa(input);
 
         //todo err_max, err_min
@@ -81,7 +82,7 @@ impl PID {
     /// Sets the gain for the Proportional (Kp), Integral (Ki) and Derivative (Kd)
     /// terms.
     ///
-    pub fn PIDTune(&mut self, kp: f32, ki: f32, _kd: f32) {
+    pub fn tune(&mut self, kp: f32, ki: f32, _kd: f32) {
         // Check for validity
         if kp < 0. || ki < 0. || _kd < 0. {
             return;

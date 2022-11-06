@@ -1,7 +1,8 @@
-mod algorithm;
-mod const_cfg;
+mod alg;
+mod algorithm_cfg;
 
-pub use algorithm::{PlanBlock, Planer};
+pub use alg::{PlanBlock, Planer};
+pub use algorithm_cfg::CNCCfgs;
 /// rotate motor forward or backward
 #[derive(Clone, Copy, Debug, Eq, PartialEq)]
 pub enum Direction {

@@ -130,7 +130,12 @@ impl LinearMotionProfile for LinearMotionTrapezoidal {
 #[cfg(test)]
 mod tests {
 
-    use super::{LinearMotionProfile, LinearMotionSCurve, LinearMotionTrapezoidal, Vec3};
+    use super::{
+        LinearMotionProfile,
+        LinearMotionSCurve,
+        // LinearMotionTrapezoidal,
+        Vec3,
+    };
     use num_traits::Inv;
 
     #[test]

@@ -14,9 +14,11 @@ extern crate alloc;
 
 pub use arc::Arc;
 pub use line::{Line2D, Line3D};
-pub use lookahead::{Direction, PlanBlock, PlanCondition, PlanLineData, Planer};
+pub use lookahead::{CNCCfgs, Direction, PlanBlock, PlanCondition, PlanLineData, Planer};
+pub use pid::PID;
 pub use vecx::{CanonPlane, Point, Point3, Vec2, Vec3, Vec5};
 
+#[allow(unused_imports)]
 use num_traits::Float;
 
 /// after compensaton, the orig end pos will be to the new-end pos

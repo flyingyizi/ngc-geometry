@@ -1,4 +1,8 @@
 
+[Rust for Embedded C Programmers](https://docs.opentitan.org/doc/ug/rust_for_c/)
+
+[The Embedded Rust Book](https://docs.rust-embedded.org/book/intro/no-std.html)
+
 实现过程中，几个算法推导记录。
 
 # 1.已知轴向约束，推算任意方向上的约束值

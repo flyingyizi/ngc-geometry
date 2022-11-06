@@ -1,12 +1,13 @@
 use ngc_geometry::{
     profile::{
-        trapezoidal::{Conditions, Trapezoidal},
+        /* trapezoidal::{Conditions, Trapezoidal},*/
         LinearMotionProfile, LinearMotionTrapezoidal,
     },
     Vec3,
 };
 
 // use fmt::Write;
+#[allow(unused_imports)]
 use num_traits::Inv;
 use poloto::prelude::*;
 // use rand::Rng;

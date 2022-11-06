@@ -1,4 +1,4 @@
-use ngc_geometry::{line::Line3D, vecx::Point3};
+use ngc_geometry::{Line3D, Point3};
 
 // use fmt::Write;
 use poloto::prelude::*;
